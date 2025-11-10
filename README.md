@@ -29,6 +29,17 @@ It automatically parses the data, validates structure, and generates analytics i
 
 ---
 
+## 🖼️ 6. Screenshots (Execution)
+
+### 🔸 Default View (Before Upload)
+![Dashboard Default](./screenshots/dashboard-empty.png)
+### 🔸 After Uploading CSV
+![Dashboard Populated](./screenshots/dashboard-filled.png)
+### 🔸 Analytics View (Charts)
+![Dashboard Charts](./screenshots/dashboard-charts.png)
+
+---
+
 ## 🧰 3. Prerequisites
 | Tool | Version |
 |------|----------|
