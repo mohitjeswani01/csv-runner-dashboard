@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏃‍♂️ CSV Runner Dashboard  
+_A project by **Mohit Jeswani** for the Full Stack Development Internship Assignment (Daynt Tech Services LLP)._
 
-## Getting Started
+---
 
-First, run the development server:
+## 📘 1. Project Overview
+The **CSV Runner Dashboard** is a Next.js + Tailwind web application that allows users to upload a CSV file containing daily running data (`date, person, miles run`).
 
+It automatically parses the data, validates structure, and generates analytics including overall and per-person performance metrics. The results are displayed with visually engaging charts powered by **Recharts**.
+
+---
+
+## ✨ Key Features
+- 📂 **CSV Upload & Validation:** Detects missing headers and invalid data  
+- 📊 **Dynamic Statistics:** Average, Min, Max, and Entry Count  
+- 👥 **Per-Person Analysis:** Individual performance breakdowns  
+- 📈 **Interactive Charts:** Line chart (trend over dates) & bar chart (avg per person)  
+- 🧱 **Client-Side Only:** No backend or database needed  
+- 🎨 **Polished Dark UI:** Clean, readable, and mobile-friendly interface  
+
+---
+
+## ⚙️ 2. Assumptions
+- CSV headers must include: `date`, `person`, and `miles run` (case-insensitive)
+- Dates can be in ISO or standard formats parseable by `Date()`
+- `miles run` must be numeric
+- All data handled **in-memory** — no backend or local DB  
+- Application built for **Next.js 14** with **TypeScript + Tailwind**
+
+---
+
+## 🧰 3. Prerequisites
+| Tool | Version |
+|------|----------|
+| Node.js | v22.14.0 |
+| npm | v10.9.0 |
+| Database | None (client-side only) |
+
+---
+
+## 🧱 4. Setup
+
+### Clone the repository
 ```bash
+git clone https://github.com/mohitjeswani/csv-runner-dashboard.git
+cd csv-runner-dashboard
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
